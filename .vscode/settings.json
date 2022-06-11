@@ -1,6 +1,5 @@
 {
-  "java.dependency.syncWithFolderExplorer": false,
-  "java.project.sourcePaths": [
-    "for_debug"
-  ]
+  "java.dependency.syncWithFolderExplorer": true,
+  "java.project.sourcePaths": ["a_for_debug"],
+  "java.dependency.packagePresentation": "flat"
 }
