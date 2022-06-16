@@ -1,0 +1,45 @@
+Java Collection Framework
+      >> The Java collections framework provides a set of interfaces and classes to import various data structures and algorithms.
+      >> For example, the 'LinkedList' class of the collections framework provides the Implementation of the doubly-linked list data structure.
+
+
+Interfaces of Collections Framework
+      >> The Java collections framework provides various interfaces. These interfaces include several methods to perform different operations on collections.
+
+Java Collection Interface
+      >> The 'Collection' interface is the root interface of the collections framework hierarchy.
+      >> Java does not provide direct Implementations of the 'Collection' interface but provides Implementations of its subinterfaces like 'List', 'Set', and 'Queue'.
+
+      Collections Framework Vs. Collection Interface
+            >> People often get confused between the collections framework and 'Colection' interface.
+            >> The 'Collection' interface is the root interface of the collections framework. 
+            >> The framework includes is the root interfaces as well: 'Map' and 'Iterator'.
+            >> These interfaces may also have subinterfaces.
+
+     
+Subinterfaces of the Colection Interface
+      >> As mentioned earier, the 'Collection' interface includes subinterfaces that are Implemented by Java classes.
+      >> All the methods of the 'Collection' interface are also present in its subinterfaces.
+      >> Here are the subinterfaces of the 'Collection' interface:
+            List Interface : It is an ordered collection that allows us to add and remove elements like an array.
+            Set Interface : The 'Set' interface allows us to store elements in different sets similar to the set in mathematics. It cannot have duplicate elements.
+            Queue Interface : The 'Queue' interface is used when we want to store and access elements in 'First In, First Out' manner.
+      
+Java Map Interface
+      >> In Java, the 'Map' interface allows elements to be stored in 'key/value' pairs. Keys are unique names that can be used to access a particular element in a map.
+      >> And, each key has a single value associated with it.
+
+Java Iterator Interface
+      >> In Java, the 'Iterator' interface provides methods that can be used to access elements of collections.
+
+Why the Collections Framework?
+      >> The Java collections framework provides various data structures and algorithms that can be used directly.
+      >> This has two main advantages:
+            >> We do not have to write code to implement these data structures and algorithms manually.
+            >> Our code will be much more efficient as the collections framework is highly optimized.
+      >> Moreover, the collections framework allows us to use a specific data structure for a particular type of data.
+      >> Here are a few examples,
+            >> If we want our data to be unique, then we can use the 'Set' interface provided by the collections framework.
+            >> To store data in 'key / value' pairs, we can use the 'Map' interface.
+            >> The 'ArrayList' class provides the functionality of resizable arrays.
+            

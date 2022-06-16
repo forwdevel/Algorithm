@@ -1,0 +1,6 @@
+Java Vector
+      >> This class is an implementation of the 'List' interface that allows us to create resizable-arrays similar to the ArrayList class.
+
+Java Vector vs. ArrayList
+      >> In Java, both 'ArrayList' and 'Vector' implements the 'List' interface and provides the same fuctionalities.
+            However, these exist some differences between them.
