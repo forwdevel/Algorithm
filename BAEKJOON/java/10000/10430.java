@@ -9,12 +9,12 @@ class Main {
         int a = scanner.nextInt();
         int b = scanner.nextInt();
         int c = scanner.nextInt();
+        scanner.close();
 
         System.out.println((a + b) % c);
-        System.out.println(((a % c) + (b % c) % c));
+        System.out.println(((a % c) + (b % c)) % c);
         System.out.println((a * b) % c);
         System.out.println(((a % c) * (b % c)) % c);
 
-        scanner.close();
     }
 }

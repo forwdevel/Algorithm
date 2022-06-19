@@ -12,11 +12,12 @@ class Main {
                   }
 
                   if (target < arr[mid]) {
-                        binarySearch(arr, target, left, mid - 1);
+                        // Return statement is necessary
+                        return binarySearch(arr, target, left, mid - 1);
                   }
 
                   if (target > arr[mid]) {
-                        binarySearch(arr, target, mid + 1, right);
+                        return binarySearch(arr, target, mid + 1, right);
                   }
             }
 
@@ -26,26 +27,22 @@ class Main {
       public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
 
-            int a = scanner.nextInt();
-            int[] arr = new int[a];
+            int arr_size = scanner.nextInt();
+            int[] arr = new int[arr_size];
 
-            for (int i = 0; i < a; i++) {
+            for (int i = 0; i < arr_size; i++) {
                   arr[i] = scanner.nextInt();
             }
 
-            int b = scanner.nextInt();
-            int[] target = new int[b];
+            int target_size = scanner.nextInt();
+            int[] target = new int[target_size];
 
-            for (int i = 0; i < b; i++) {
+            for (int i = 0; i < target_size; i++) {
                   target[i] = scanner.nextInt();
+                  System.out.print(binarySearch(arr, target[i], 0, arr_size - 1) + " ");
             }
 
             scanner.close();
-
-            // sort is needed (Heap)
-            for (int i = 0; i < b; i++) {
-                  System.out.print(binarySearch(arr, target[i], 0, b - 1) + " ");
-            }
 
       }
 }
