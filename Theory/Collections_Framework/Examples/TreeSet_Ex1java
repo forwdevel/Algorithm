@@ -1,0 +1,39 @@
+import java.util.TreeSet;
+
+public class TreeSet_Ex1 {
+      public static void main(String[] args) {
+            TreeSet<Integer> scores = new TreeSet<Integer>();
+
+            scores.add(new Integer(87));
+            scores.add(new Integer(98));
+            scores.add(new Integer(75));
+            scores.add(new Integer(95));
+            scores.add(new Integer(80));
+
+            Integer score = null;
+
+            score = scores.first();
+            System.out.println("Lowest Score : " + score);
+
+            score = scores.last();
+            System.out.println("Hightest Score : " + score);
+
+            score = scores.lower(new Integer(95));
+            System.out.println("Scores of under the 95 : " + score);
+
+            score = scores.higher(new Integer(95));
+            System.out.println("Scores of above the 95 : " + score);
+
+            score = scores.floor(new Integer(95));
+            System.out.println("95 or most clear under score : " + score);
+
+            score = scores.ceiling(new Integer(85));
+            System.out.println("85 or most clear above score :  " + score);
+
+            while (!scores.isEmpty()) {
+                  // Return Lowest value of tree and remove it
+                  score = scores.pollFirst();
+                  System.out.println(score + "(The number of remain object : " + scores.size() + ")");
+            }
+      }
+}
