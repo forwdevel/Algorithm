@@ -1,6 +1,5 @@
 // [Merge Sort]
-// >> This is one of 'the most popular' sorting algorithm that is based on the
-// principle of 'Divide and Conquer Algorithm.'
+// >> This is one of 'the most popular' sorting algorithm that is based on the principle of 'Divide and Conquer Algorithm.'
 
 // -------------------------------------------------------------------------------------
 
@@ -10,13 +9,10 @@
 // from the subproblems to solve the main problem.
 
 // Divide
-// >> If q is the half-way point between p and r, then we can split the subarray
-// A[p..r] in to two arrays A[p..q] and A[q+1, r].
+// >> If q is the half-way point between p and r, then we can split the subarrayA[p..r] in to two arrays A[p..q] and A[q+1, r].
 
 // Conquer
-// >> In the conquer step,we try tp sort both the subarrays A[p..q] and A[q+1,
-// r]. If we haven't yet reached the base case, we again divide both these
-// subarrays and try to sort them.
+// >> In the conquer step,we try tp sort both the subarrays A[p..q] and A[q+1, r]. If we haven't yet reached the base case, we again divide both these subarrays and try to sort them.
 
 // Combine
 // >> When the conquer step reaches the base step and we get two sorted

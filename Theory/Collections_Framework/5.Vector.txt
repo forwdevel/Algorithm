@@ -1,5 +1,6 @@
 Java Vector
-      >> This class is an implementation of the 'List' interface that allows us to create resizable-arrays similar to the ArrayList class.
+      >> This class is an implementation of the 'List' interface that allows us to create resizable-arrays 
+      similar to the ArrayList class.
 
 Java Vector vs. ArrayList
       >> In Java, both 'ArrayList' and 'Vector' implements the 'List' interface and provides the same fuctionalities.
@@ -10,7 +11,8 @@ Java Vector vs. ArrayList
       >> It is because when one thread is accessing a vector, and at the same time another thread tries to access it, 
             an exception called 'ConcurrentModificationException' is generated.
             Hence, this continuous use of lock for each operation makes vectors less efficient.
-      >> However, in array lists, methods are not synchronized. Instead, it uses the 'Collections.synchronizedList()' method that synchronizes the list as a whole.
+      >> However, in array lists, methods are not synchronized. Instead, it uses the 'Collections.synchronizedList()' 
+      method that synchronizes the list as a whole.
       >> It is recommended to use ArrayList in place of Vector because vectors less efficient.
 
 Add Elements to Vector
