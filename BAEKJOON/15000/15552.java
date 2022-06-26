@@ -1,24 +1,25 @@
-
-// For Algorithm submit template
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.StringTokenizer;
+
+// For Algorithm submit template
 
 class Main {
-      public static void main(String[] args) throws IOException {
-            BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+    public static void main(String[] args) throws IOException {
 
-            StringBuffer sb = new StringBuffer();
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String s = br.readLine();
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-            int n = Integer.parseInt(bf.readLine());
+        for (int i = 0; i < Integer.parseInt(s); i++) {
+            StringTokenizer st = new StringTokenizer(br.readLine());
+            bw.write(Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken()) + "\n");
+        }
 
-            for (int i = 0; i < n; i++) {
-                  int a = Integer.parseInt(bf.readLine());
-                  int b = Integer.parseInt(bf.readLine());
-                  sb.append(a + b).append("\n");
-            }
-
-            System.out.println(sb);
-
-      }
+        bw.flush();
+        bw.close();
+    }
 }
